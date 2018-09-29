@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.filter-menu {
+    width: 250px;
+    display: inline-block;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    color: white;
+    background-color: #0e0e0e;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.map-container {
+    width: calc( 100% - 250px);
+    float: right;
+    transition: width .5s;
+}
+header {
+    height: 50px;
+    box-sizing: border-box;
+    font-size: 25px;
+    color: #388eff;
+    background-color: #2d2d2d;
+}
+
+.burger-menu {
+    padding: 5px 15px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.filter-menu h1 {
+    text-transform: uppercase;
+    padding-left: 20px;
+    font-weight: 100;
+    display: inline-block;
+}
+
+.search-field {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #b1b1b1;
+    position: relative;
+    box-sizing: border-box;
+}
+.search ul {
+    list-style: none;
+    padding: 0;
+}
+
+.search ul li {
+    padding: 10px;
+    font-size: 14px;
+}
+
+.search ul li:hover, .search ul li:focus {
+    background-color: #3c3c3c;
+    cursor: pointer;
+}
+.closebtn{
+    font-size: 30px;
+    float: right;
+    padding: 10px;
+}
+.closebtn:hover, .closebtn:focus{
+    color: #a7a7a7;
+    cursor: pointer;
+}
+.burger-menu:hover, .burger-menu:focus{
+    color: #266cc7;
+}
+
+@media screen and (max-width:768px){
+.filter-menu{
+    width: 0;
+}
+.map-container{
+    width: 100%;
+}
+}
