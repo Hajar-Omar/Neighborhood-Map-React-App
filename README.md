@@ -1,4 +1,4 @@
-#Project Overview
+# Project Overview
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 It shows a Google map with some neighbor's locations markers of me, and you can search on one of them and see the filteration on the map through it's markers, also you can click on one of the markers and it will show you some of information about the marker's place, information like name, address, and link to this place on [Foursquare site](https://foursquare.com), so you can see more information about the place
@@ -35,13 +35,9 @@ registration will fail, but the rest of your web app will remain functional.
 
 ## Run the application
 
-```sh
-npm install
-```
+`npm install` to install all required dependencies 
 
-```sh
-npm start
-```
+`npm start` to launch the app on the browser
 
 
 ## Making a Progressive Web App
