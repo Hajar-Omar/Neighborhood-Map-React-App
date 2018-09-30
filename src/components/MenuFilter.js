@@ -54,7 +54,7 @@ export default class Filter extends Component {
 
         return (
             <div className="search">
-                <input role="search on loactions" aria-labelledby="filter" className="search-field" type="text" placeholder="Filter"
+                <input aria-label="search on locations" className="search-field" type="text" placeholder="Filter"
                     value={this.state.query} onChange={this.filterLocations} />
                 <ul>
                     {locationlist}

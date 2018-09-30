@@ -116,8 +116,15 @@ class App extends Component {
     script.onerror = function () {
       document.write("Google Maps can't be loaded");
     };
+
     ref.parentNode.insertBefore(script, ref);
+
+    //on invaild key
+    window.gm_authFailure = ()=> {
+      alert("Invaild Google API key!");
+      };
   }
+
 
   // Initialise the map
   initMap() {
@@ -250,13 +257,13 @@ class App extends Component {
       <div>
         <section className="filter-menu">
           <h1>Locations</h1>
-          <a className="closebtn" role="button" aria-label="close filter menu" onClick={this.closeNav}>&times;</a>
+          <a className="closebtn" role="button" tabIndex="1" aria-label="close filter menu" onClick={this.closeNav}>&times;</a>
           <LocationMenu key="100" locationsList={this.state.locationsList} openInfoWindow={this.openInfoWindow}
             closeInfoWindow={this.closeInfoWindow} />
         </section>
         <section className="map-container">
           <header>
-            <a className="burger-menu" role="button" aria-label="open filter menu" onClick={this.openNav}>&#9776;</a>
+            <a className="burger-menu" role="button" tabIndex="2" aria-label="open filter menu" onClick={this.openNav}>&#9776;</a>
           </header>
           <div id="map" role="application" aria-label="Google Maps"></div>
         </section>
