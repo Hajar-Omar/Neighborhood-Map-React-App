@@ -111,7 +111,7 @@ class App extends Component {
     //Load the google maps Asyn and inject it's script to index.html
     var ref = window.document.getElementsByTagName("script")[0];
     var script = window.document.createElement("script");
-    script.src = 'https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap';
+    script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBQgtrU7uaWjGc8Vg1tgNybdgjlm5j31J0&callback=initMap';
     script.async = true;
     script.onerror = function () {
       document.write("Google Maps can't be loaded");
